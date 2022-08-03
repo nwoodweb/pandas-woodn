@@ -11,6 +11,18 @@ visualization of tabular data please see the section on `Table Visualization <st
 
 We use the standard convention for referencing the matplotlib API:
 
+.. note::   
+
+    This guideline assumes that the end user is operating in the interactive
+    Jupyter Notebooks environment.
+
+    If one is implementing a script or is executing the Python interpreter
+    from a command line interface, one may opt for ``plt.savefig('$filename')``
+    in lieu of the ``$object.plot()`` functions found in this tutorial.
+
+    ``plt.savefig()`` saves the pandas object as an image and accepts a variety  
+    of filetypes, including png, pdf, jpg, and tiff. 
+
 .. ipython:: python
 
    import matplotlib.pyplot as plt
@@ -23,7 +35,7 @@ libraries that go beyond the basics documented here.
 
 .. note::
 
-   All calls to ``np.random`` are seeded with 123456.
+    All calls to ``np.random`` are seeded with 123456.
 
 .. _visualization.basic:
 
